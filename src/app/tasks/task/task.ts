@@ -20,9 +20,7 @@ interface Task {
 export class TaskComponent {
   @Input({ required: true }) task!: Task
 
-  constructor(private tasksService: TasksService){
-
-  }
+  constructor(private tasksService: TasksService){}
 
   onCompleteTask(){
     this.tasksService.removeTask(this.task.id);

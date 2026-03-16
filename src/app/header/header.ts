@@ -2,6 +2,7 @@
 
 @Component({
     selector: 'app-header',
+    standalone: false,
     templateUrl: './header.html',
     styleUrl: './header.css'
 })
